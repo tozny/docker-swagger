@@ -1,7 +1,7 @@
 swagger2html
 ==============
 
-Generate HTML document from swagger spec using [Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) and [Asciidoctor](http://asciidoctor.org/).
+Generate an HTML document from a Swagger spec using [Swagger2Markup](https://github.com/Swagger2Markup/swagger2markup) and [Asciidoctor](http://asciidoctor.org/).
 
 Usage
 ------
