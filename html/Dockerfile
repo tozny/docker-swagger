@@ -10,9 +10,9 @@ RUN apk update && apk upgrade && apk add --no-cache \
     && echo 'gem: --no-document' > /etc/gemrc
 
 RUN gem install --no-doc asciidoctor
-RUN wget -O swagger2markup-cli-1.0.1.jar 'https://bintray.com/swagger2markup/Maven/download_file?file_path=io%2Fgithub%2Fswagger2markup%2Fswagger2markup-cli%2F1.0.1%2Fswagger2markup-cli-1.0.1.jar'
+RUN wget -O swagger2markup-cli.jar 'https://dl.bintray.com/swagger2markup/Maven/io/github/swagger2markup/swagger2markup-cli/1.3.1/swagger2markup-cli-1.3.1.jar'
 
-CMD java -jar swagger2markup-cli-1.0.1.jar convert \
+CMD java -jar swagger2markup-cli.jar convert \
     --swaggerInput /in/swagger.y*ml \
     --outputFile /out/swagger && \
     asciidoctor /out/swagger.adoc \
